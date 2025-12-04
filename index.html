@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Odliczanie — 31.12.2025 20:00</title>
+  <style>
+    :root {
+      --bg: #0b0b0f;
+      --card: #0f1720;
+      --accent: #00ff8c;
+      --muted: #aeb6c2;
+    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#05060a 0%, #0b0b0f 100%);color:var(--muted);}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;box-sizing:border-box}
+    .card{background:rgba(255,255,255,0.03);padding:28px;border-radius:16px;box-shadow:0 10px 30px rgba(2,6,23,0.6);text-align:center;max-width:720px;width:100%}
+    h1{margin:0 0 12px;font-size:24px;color:var(--accent)}
+    .timer{display:flex;gap:12px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+    .seg{background:rgba(255,255,255,0.02);padding:16px 20px;border-radius:10px;min-width:110px}
+    .num{font-size:32px;color:#fff;font-weight:700}
+    .lbl{font-size:12px;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:0.08em}
+    .small{margin-top:10px;color:var(--muted);font-size:13px}
+    footer{margin-top:16px;font-size:12px;color:#777}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Odliczanie do 31 grudnia 2025, 20:00 (czas lokalny)</h1>
+      <div id="timer" class="timer">
+        <div class="seg"><div id="days" class="num">--</div><div class="lbl">dni</div></div>
+        <div class="seg"><div id="hours" class="num">--</div><div class="lbl">godzin</div></div>
+        <div class="seg"><div id="minutes" class="num">--</div><div class="lbl">minut</div><
